@@ -11,6 +11,7 @@
 
 .name {
     position: sticky;
+    z-index: 3;
     top: 20px;
     height: 0px;
     margin: 60px 0px 60px 0px;
@@ -23,21 +24,24 @@
 .first {
     padding: 10px 0px 10px 0px;
     background-color: #fae3e0;
-    text-align: center; 
+    text-align: center;
 }
 
 .left-picture {
     float: left;
     position: absolute;
+    z-index: 1;
     margin: 5px 10px 0px 60px;
 }
 
 .my-photo {
     float: left;
-    position: relative;
+    position: absolute;
+    z-index: 2;
     margin: 90px 50px 0px 150px;
     padding: 1%;
     border: 2px solid #b5a642;
+    box-shadow:  20px 20px rgba(0,0,0,0.19), 2px 2px 2px rgba(0,0,0,0.23);
 }
 
 .contacts {
@@ -55,24 +59,29 @@
 }
 
 .column-left {
-    background-color: #fae3e0;
+    background: linear-gradient(50deg, #ba78a6, #FFCCCC);
     float: left;
     border-inline-start: 2px solid #b5a642; 
     padding: 0px 5px 0px 5px;
+    margin: 10px 0px 0px 0px;
+    color:#726240;
 }
 
 .column-center {
-    background-color: #fae3e0;   
+    background: linear-gradient(32deg, #FFCCCC, #d2bacb);   
     float: left;
-    margin: 0px 10px 0px 10px;
+    margin: 10px 10px 0px 10px;
     padding: 0px 15px 0px 15px;
+    color:#726240;
 }
 
 .column-right {
-    background-color: #fae3e0; 
+    background: linear-gradient(75deg, #FFCCCC, #ba78a6); 
     float: left;
     border-inline-end: 2px solid #b5a642;
     padding: 0px 15px 0px 15px;
+    margin: 10px 0px 0px 0px;
+    color:#726240;
 }
 
 .head {
@@ -81,7 +90,7 @@
 
 .third {
     padding: 20px 250px 20px 250px;
-    background-color: #f8f8ff;
+    background-color: #f6eae8d0;;
     align-items: center;
     justify-content: center;
     text-align: center; 
