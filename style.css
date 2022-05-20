@@ -130,27 +130,29 @@ textarea {
 	margin: 0;
 }
 
-.section-middle {
+.section-middle-container {
 	background-color: #faf0e6;
 	border-top: 2px dashed #b5a642;
 	border-bottom: 2px dashed #b5a642;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 45px;
 }
 
-.section-middle-container {
-	min-height: 240px;
+.section-middle-container {	
+	min-height: 150px;
 }
 
 .skill-box {
-	width: 30%;
-	height: 240px;
-	padding: 30px 40px;
 	color:#726240;
 	border: 2px solid #b5a642;
 	float: left;
+	margin: 45px 70px 45px 70px;
+	padding-left: 10px;
 }
 
 .skill-box > h3 {
-	margin-top: 0;
+	margin-top: 25px;
 }
 
 .skill-box > ul {
@@ -159,15 +161,19 @@ textarea {
 
 .skill-box-left {
 	background: linear-gradient(50deg, #ba78a6, #FFCCCC);
+	align-self: center;
 }
 
 .skill-box-center {
-	margin: 0 65px;
 	background: linear-gradient(32deg, #FFCCCC, #d2bacb);
+	align-self: center;
+	margin: 15px 15px;
+	padding-left: 10px;
 }
 
 .skill-box-right {
 	background: linear-gradient(75deg, #FFCCCC, #ba78a6);
+	align-self: center;
 }
 
 .head {
@@ -204,9 +210,37 @@ textarea {
 	margin-bottom: 10px;
 }
 
+/* Footer */
 .footer {
-	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	padding: 20px 200px 20px 200px;
+	background-color: #faf0e6;
 	color: #b5a642;
-	padding: 15px 0px 10px 0px;
-	font-size: 15px;
+	font-size: 20px; 
+}
+.footer_github {
+	position: relative;
+	padding-left: 40px;
+}
+
+.footer_github::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 32px;
+	height: 32px;
+	background-image: url("github-logo.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.footer_year {
+	justify-self: center;
+}
+
+.address {
+	justify-self: end;
 }
