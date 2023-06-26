@@ -27,8 +27,8 @@ HTML, CSS, JavaScript, React
 
 ### **Languages**
 
-- English
-- Chinese
+- English B2
+- Chinese B2
 
 ---
 
@@ -48,3 +48,11 @@ function persistence(num) {
   return i;
 }
 ```
+
+---
+
+### **Education**
+
+- CS50 video course
+- JavaScript: https://learn.javascript.ru/
+- React: https://handsonreact.com/
