@@ -25,7 +25,26 @@ HTML, CSS, JavaScript, React
 
 ---
 
-### **Language**
+### **Languages**
 
 - English
 - Chinese
+
+---
+
+### **Code example**
+
+```javascript
+function persistence(num) {
+  let i = 0;
+  while (num.toString().length !== 1) {
+    num = num
+      .toString()
+      .split("")
+      .map((str) => +str)
+      .reduce((acc, item) => acc * item);
+    i++;
+  }
+  return i;
+}
+```
