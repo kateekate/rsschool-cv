@@ -36,7 +36,8 @@ main {
 h1 {
   margin: 0px;
   padding: 0px;
-  font-size: 32px;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 40px;
   font-weight: bold;
   color: #400e5a;
 }
@@ -72,6 +73,7 @@ h1 {
   border-bottom: 1.2px solid #5a496a;
 }
 .email a {
+  font-family: 'DM Sans', sans-serif;
   color: inherit;
   text-decoration: none;
 }
@@ -84,11 +86,18 @@ h1 {
   height: 32px;
   border-radius: 40px;
   background-color: #c98761;
+  font-family: 'DM Sans', sans-serif;
   color: #400e5a;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .description p {
+  color: #400e5a;
+  left: 30px;
+  position: relative;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bolder;
   margin: 0;
 }
