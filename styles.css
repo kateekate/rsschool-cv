@@ -6,6 +6,7 @@ body {
 
 main {
   display: flex;
+  justify-content: center;
   background-color: #b6a0df;
   background-image: url("./l.png");
   background-size: contain;
@@ -13,11 +14,27 @@ main {
 
 .container {
   display: flex;
+  align-items: center;
   margin: 28px;
   background-color: #ffff;
   border: 16px solid rgb(182 160 223 / 69%);
   border-radius: 25px;
-  box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #000000;
+}
+
+.description-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0px 15px 0px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #400e5a;
 }
 
 .photo-portrait {
@@ -28,15 +45,30 @@ main {
 }
 
 .name-block {
+  margin-top: 10px;
   display: grid;
-  grid-template-rows: 25px auto;
-  grid-template-columns: 1fr 2fr;
-  gap: 10px;
+  grid-template-rows: 25px 45px 25px;
+  justify-items: center;
+  align-items: center;
+}
+
+.email {
+  padding: 5px;
+  color: #67407c;
+  font-weight: bold;
+  border-top: 1.2px solid #5a496a;
+  border-bottom: 1.2px solid #5a496a;
 }
 
 .frontend-developer {
-  text-align: center;
-  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 32px;
   border-radius: 40px;
   background-color: #c98761;
+  color: #400e5a;
+  text-transform: uppercase;
+  font-weight: bold;
 }
