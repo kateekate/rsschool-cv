@@ -8,7 +8,7 @@ main {
   display: flex;
   justify-content: center;
   background-color: #b6a0df;
-  background-image: url("./l.png");
+  background-image: url("./lines-back.png");
   background-size: contain;
 }
 
