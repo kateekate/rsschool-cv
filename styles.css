@@ -2,6 +2,7 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
+  overscroll-behavior: none;
 }
 
 main {
@@ -13,7 +14,7 @@ main {
   background-size: contain;
 }
 
-.container {
+.description-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +50,7 @@ main {
   gap: 10px;
 }
 
-h1 {
+.name-block h1 {
   margin: 0px;
   padding: 0px;
   font-family: "League Spartan", sans-serif;
@@ -95,17 +96,16 @@ h1 {
   margin: 0;
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .container {
     margin: 64px 180px;
   }
-
 }
 @media (max-width: 1200px) {
   .container {
     margin: 32px 90px;
   }
-  }
+}
 
 @media (min-width: 769px) {
   .personal-name {
@@ -130,10 +130,55 @@ h1 {
   .photo-portrait {
     width: 32vw !important;
   }
-  h1 {
+  .name-block h1 {
     font-size: 28px !important;
   }
   .description p {
     left: 0px !important;
+  }
+} */
+
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 180px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 32px 64px;
 }
+
+.cv-container-header {
+  margin: 0px;
+  padding-bottom: 12px;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #400e5a;
+  border-bottom: 1.2px solid #5a496a;
+}
+
+.hard-skills-block li {
+  color: #400e5a;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+.soft-skills-block {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.soft-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 32px;
+  border-radius: 40px;
+  background-color: #c98761;
+  font-family: "DM Sans", sans-serif;
+  color: #400e5a;
+  font-weight: bold;
 }
