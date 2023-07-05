@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -123,7 +124,7 @@ main {
   letter-spacing: 1px;
 }
 
-.codewars-block{
+.codewars-block {
   display: flex;
   justify-content: center;
   margin: 20px;
@@ -216,7 +217,7 @@ main {
   letter-spacing: 1px;
 }
 
-.code-block{
+.code-block {
   margin-top: 70px;
   background-color: white;
 }
@@ -237,6 +238,35 @@ main {
 
 .address-block img {
   width: 3rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 55px;
+  font-size: 0.8rem;
+}
+
+footer p {
+  font-family: "DM Sans", sans-serif;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+.github img {
+  width: 1.5rem;
+  margin-right: 10px;
+}
+
+.rs-school img {
+  width: 4rem;
 }
 
 /* MEDIA  */
@@ -391,9 +421,9 @@ main {
     font-size: 10px;
   }
 
-.code-block pre {
-  font-size: 10px;
-}
+  .code-block pre {
+    font-size: 10px;
+  }
 
   .education-block li {
     width: 2px;
