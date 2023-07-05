@@ -184,8 +184,38 @@ main {
   font-weight: bold;
 }
 
-.line {
-  width: 1px; /* Ширина линии */
-  height: 100%; /* Высота линии */
-  background-color: black; /* Цвет линии */
+.education-block  li{
+      background: #c98761;
+      position: relative;
+      width: 3px;
+      list-style-type: none;
+      
+      &:last-child{
+        padding-bottom: 7px;
+      }
+      
+      &:before{
+        content: '';
+        background: #c98761;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        width: 15px;
+        height: 15px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+}
+
+.content{
+  position: relative;
+  top: 7px;
+  padding: 25px;
+  color: #400e5a;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
