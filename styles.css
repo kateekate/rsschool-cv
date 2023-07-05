@@ -184,33 +184,33 @@ main {
   font-weight: bold;
 }
 
-.education-block  li{
-      background: #c98761;
-      position: relative;
-      width: 3px;
-      list-style-type: none;
-      
-      &:last-child{
-        padding-bottom: 7px;
-      }
-      
-      &:before{
-        content: '';
-        background: #c98761;
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        width: 15px;
-        height: 15px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-      }
+.education-block li {
+  background: #c98761;
+  position: relative;
+  width: 3px;
+  list-style-type: none;
+
+  &:last-child {
+    padding-bottom: 7px;
+  }
+
+  &:before {
+    content: "";
+    background: #c98761;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
 }
 
-.content{
+.content {
   position: relative;
   top: 7px;
   padding: 25px;
@@ -218,4 +218,36 @@ main {
   font-family: "DM Sans", sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
+}
+
+.hobby-circles-block {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  margin-top: 1em;
+}
+
+.hobby-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #c98761;
+}
+
+.hobby-circle img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.hobby-circle-name {
+  color: #400e5a;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+}
+
+.languages-block li {
+  color: #400e5a;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 1px;
 }
