@@ -139,9 +139,8 @@ main {
 } */
 
 .cv-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 0px 180px;
   padding: 32px 64px;
   background-color: #fff;
@@ -163,6 +162,12 @@ main {
   color: #400e5a;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 1px;
+}
+
+.codewars-block{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 
 .soft-skills-block {
@@ -250,4 +255,9 @@ main {
   color: #400e5a;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 1px;
+}
+
+.code-block{
+  margin-top: 70px;
+  background-color: white;
 }
