@@ -2,21 +2,146 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Markasian Resume-CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.png">
+  <title>Markasian CV</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>My CV</h1>
-  </header>
-  <main>
-    <section></section>
-    <section></section>
-    <section></section>
-  </main>
-  <footer>&copy; 2023 </footer>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-block">
+        <nav class="header-nav-block">
+          <ul>
+            <li class="scale"><a href="#skills">skills</a></li>
+            <li class="scale"><a href="#code-example">code example</a></li>
+            <li class="scale"><a href="#languages">languages</a></li>
+            <li class="scale"><a href="#contacts">contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="description-container">
+        <div class="photo-block">
+          <img src="photo.jpg" alt="Photo portrait" class="photo-portrait shadow">
+        </div>
+        <div class="description-block">
+          <div class="name-block">
+            <span class="personal-name">Hi! I'm</span>
+            <div class="frontend-developer transition">Frontend Developer</div>
+            <h1 class="personal-name">Katerina Markasian</h1>
+          </div>
+          <div class="email">
+            <a href="mailto:example@example.com">katya.mikhailova.98@gmail.com</a>
+          </div>
+          <div class="description">
+            <p>
+              Student. Have a strong interest in development. <br />
+              Improve my React JS skills, learn Next.js and coding with love.
+              <br />I'm looking forward for my first job experience.
+            </p>
+          </div>
+        </div>
+
+      </section>
+      <section class="cv-container">
+        <div class="skills-block">
+          <h2 class="cv-container-header" id="skills">skills & expertise</h2>
+          <ul class="hard-skills-block">
+            <li>HTML, CSS</li>
+            <li>JavaScript, TypeScript</li>
+            <li>React, Next.js</li>
+          </ul>
+          <div class="codewars-block scale">
+            <img src="https://www.codewars.com/users/myparadisexx/badges/small?theme=light" alt="Codewars level">
+          </div>
+          <div class="soft-skills-block">
+            <div class="soft-skill shadow">Teamwork</div>
+            <div class="soft-skill shadow">Communication</div>
+            <div class="soft-skill shadow">Creativity</div>
+          </div>
+          <div class="code-block" id="code-example">
+            <h2 class="cv-container-header">code example</h2>
+            <pre>function persistence(num) {
+              let i = 0;
+              while (num.toString().length !== 1) {
+                num = num
+                  .toString()
+                  .split("")
+                  .map((str) => +str)
+                  .reduce((acc, item) => acc * item);
+                i++;
+              }
+              return i;
+            }</pre>
+
+          </div>
+        </div>
+        <div class="education-block">
+          <h2 class="cv-container-header">education</h2>
+          <ul>
+            <li>
+              <div class="content">2015-2020 Belarusian State University</div>
+            </li>
+            <li>
+              <div class="content">2017 Harbin Institute of Technology</div>
+            </li>
+            <li>
+              <div class="content">2019 Luoyang Normal University</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hobbies-block">
+          <h2 class="cv-container-header">hobbies</h2>
+          <div class="hobby-circles-block">
+            <div class="hobby-circle shadow"><img src="./laptop-icon.png" alt="Laptop icon">
+              <p class="hobby-circle-name">Coding</p>
+            </div>
+            <div class="hobby-circle shadow"><img src="./travel-icon.png" alt="Travel icon">
+              <p class="hobby-circle-name">Travel</p>
+            </div>
+            <div class="hobby-circle shadow"><img src="./yoga-icon.png" alt="Yoga icon">
+              <p class="hobby-circle-name">Yoga</p>
+            </div>
+          </div>
+        </div>
+        <div class="languages-block" id="languages">
+          <h2 class="cv-container-header">languages</h2>
+          <ul>
+            <li>Russian Native</li>
+            <li>English B2</li>
+            <li>Chinese B2</li>
+          </ul>
+        </div>
+      </section>
+      <div class="address-container" id="contacts">
+        <div class="address-block">
+          <img src="info-icon.svg" alt="Info icon">
+          <p>Phone <br /> +48 452102885 </p>
+          <p>Address <br /> Poland, Biała Podlaska </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://github.com/kateekate" target="_blank" class="github">
+        <img src="github-icon.png" alt="GitHub icon">
+        <p>GitHub</p>
+      </a>
+      <p>2023</p>
+      <a href="https://rs.school/js/" target="_blank" class="rs-school">
+        <img src="rs-school-icon.svg" alt="Rs-school icon">
+      </a>
+    </footer>
+  </div>
 </body>
 
 </html>
