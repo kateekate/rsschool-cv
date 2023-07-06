@@ -52,7 +52,7 @@ main {
   gap: 10px;
 }
 
-.name-block h1 {
+.name-block h1, .name-block span {
   margin: 0px;
   padding: 0px;
   font-family: "League Spartan", sans-serif;
@@ -301,7 +301,7 @@ footer p {
     width: 32vw;
   }
 
-  .name-block h1 {
+  .name-block h1, .name-block span {
     font-size: 32px;
   }
 
@@ -330,7 +330,7 @@ footer p {
     width: 32vw;
   }
 
-  .name-block h1 {
+  .name-block h1, .name-block span {
     font-size: 24px;
   }
 
@@ -387,7 +387,7 @@ footer p {
     width: 40vw;
   }
 
-  .name-block h1 {
+  .name-block h1, .name-block span {
     font-size: 20px;
   }
 
